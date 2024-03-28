@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    background-color: rgb(128, 163, 128);
+    position: absolute;
+    top: 0;
+
+}
+
+.wrapper nav img{
+    width: 70%;
+    filter: invert();
+    cursor: pointer;
+    transition: transform .2s;
+    
+}
+.wrapper nav img:hover{
+    transform: scale(1.1);
+}
+nav{
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    gap: 4vh; 
+}
+
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 7vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    border-top: none;
+    padding: 10px 20px;
+}
+nav a p{
+    animation: levitate 1s alternate  infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes levitate {
+    0%{
+        transform: translateY(.5vh);
+    }
+    100%{
+        transform: translateY(-.8vh);
+    }
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    margin-top: 10vh;
+
+}
+
+.contact-me{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    position: relative;
+    bottom:  4vh;
+    box-shadow: 0vh 0vh 1vh 0vh rgb(177, 177, 177);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    flex-direction: column;
+}
+.contact-me input{
+    margin-top: 3vh;
+    width: 60vw;
+    height: 5vh;
+    padding: 0vh .5vh;
+    border-radius: 15px;
+    font-size: 4vw;
+    border: 1px solid grey;
+    outline: none;
+}
+
+textarea{
+    width: 90%;
+    margin-top: 2vh;
+    padding: 1vh;
+    margin-bottom: 2vh;   
+}
+
+.contact-me button{
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(128, 163, 128);
+    color: white;
+}
+.socials{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1vh; 
+    position: relative;
+    bottom: 2vh;
+}
+
+.socials  a img{
+    width: 7vw;
+}
+.contact-info{
+    display: none;
+}
+
+
+@media only screen and (min-width:768px){
+    .wrapper nav img{
+        width: 60%;
+      
+    }
+    .contact-me input{
+        font-size: 2.5vw;     
+    }
+    
+    textarea{
+        font-size: 3vw;
+    }
+
+}
+
+
+@media only screen and (min-width:1000px){
+    
+    .wrapper nav img{
+        width: 30%;
+        height: 50%;
+        
+        
+    }
+    nav{
+        flex-direction: row;
+        margin-bottom: 20vh;
+        
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.5vh;
+        flex-direction: column;
+    }
+    nav ul a p{
+        font-size: 3vw;
+    }
+
+    .contact-me{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        bottom: 10vh;
+    }
+    .contact-info {
+        display: block;
+    }
+    .contact-me input{
+        width: 20vw;
+        font-size: 1.3vw;
+        padding: 1vh;
+    }
+    .form{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    textarea{
+        width: 20vw;
+        height: 40vh;
+        font-size: 1.5vw;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact-info h1{
+        color:  rgb(128, 163, 128);
+    }
+    .socials{
+        gap: 2vh;
+    }
+
+    .socials  a img{
+        width: 4vw;
+    }
+    .contact-me button{
+        height: 5vh;
+        width: 8vw;
+    }
+}

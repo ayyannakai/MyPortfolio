@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    background-color: rgb(128, 163, 128);
+    position: absolute;
+    top: 0;
+
+    
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128, 163, 128);
+    
+}
+
+nav img{
+    width: 70%;
+    filter: invert();
+    cursor: pointer;
+    transition: transform .2s;
+    
+}
+nav img:hover{
+    transform: scale(1.1);
+}
+
+nav ul{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+    margin-top: 6vh;
+    
+}
+nav ul a {
+    text-decoration: none;
+    color:  white;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    border-top: none;
+    padding: 10px 20px;
+    font-size: 7vw;
+
+
+}
+nav ul a p{
+    animation: levitate 1s alternate  infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes levitate {
+    0%{
+        transform: translateY(.5vh);
+    }
+    100%{
+        transform: translateY(-.8vh);
+    }
+    
+}
+.info{
+    margin: 10vh auto 0vh;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    background-color: white;
+    
+}
+.information{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+    box-shadow: 0vh 0vh 1vh 0vh rgb(177, 177, 177);
+    bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    color: rgb(128, 163, 128);
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.information img{
+    margin-top: 2vh;
+}
+.information h1{
+    font-size: 5vw;
+}
+.information p {
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(105, 105, 105);
+}
+.information p:nth-child(6){
+    color: black;
+    position: relative;
+    bottom: 2vh;
+}
+.information p:nth-child(5){
+    color: purple;
+}
+.information p:nth-child(7){
+    color: purple;
+}
+
+.information p:nth-child(8){
+    color: black;
+    line-height: 3vh;
+    position: relative;
+    bottom: 2vh;
+}
+
+.socials{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1vh; 
+    position: relative;
+    bottom: 2vh;
+}
+
+.socials  a img{
+    width: 7vw;
+}
+
+.logo{
+    display: none;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width:768px){
+    nav img{
+        width: 60%;
+       
+        
+    }
+    .information p:nth-child(7){
+        color: black;
+        line-height: 5vh;
+        position: relative;
+        bottom: 2vh;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    
+    nav img{
+        width: 30%;
+        height: 50%;
+       
+        
+    }
+    nav ul img{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5vh 0vh 20vh 0vh;
+       
+    }
+    nav ul a {
+      
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 20px;
+        border-top: none;
+        padding: 10px 20px;
+        font-size: 3vw;
+    
+    
+    }
+    .information{
+        width: 70%;
+        bottom: 10vh;
+        
+    }
+    .information img{
+        margin-top: 10vh;
+        width: 10vw !important;
+    }
+    .information h1{
+        font-size: 3vw;
+    }
+    .information p {
+        text-align: center;
+        font-size: 2vw;
+        
+    }
+
+    .information p:nth-child(7){
+        color: purple;
+        position: relative;
+        top: 1vh;
+    }
+    
+    .information p:nth-child(8){
+        color: black;
+        line-height: 8vh;
+        
+    }
+    .socials{
+        gap: 2vh;
+    }
+
+    .socials  a img{
+        width: 4vw;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}

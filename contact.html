@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <img src="logo.png" alt="" class="logo">
+            <ul>
+                <a href="index.html"><p>Home</p></a>
+                <a href="projects.html"><p>Projects</p></a>
+                <a href="resume.html"><p>Resume</p></a>
+
+            </ul>
+        </nav>
+        <form >
+
+            <div class="contact">
+                <div class="contact-me">
+                <div class="contact-info">
+                    <h1>Contact Me</h1>
+                    <p>Need to get in touch with me? Fill out the form with your inquiry and i will get back to you as soon as possible.</p>
+                </div>
+                <div class="form">
+                    
+                    <input type="Text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="project" id="project" cols="30" rows="15" placeholder="Project Details"></textarea>
+                    <button class="btn">Submit</button>
+                </div>
+                
+            </div>
+        </form>
+            <div class="socials">
+                <a href=""><img src="images/icons8-twitter.gif" alt=""></a>
+                    <a href="https://www.linkedin.com/in/ayyan-nakai-4759852b4/"><img src="images/icons8-linkedin.gif" alt=""></a>
+                    <a href="https://github.com/ayyannakai"><img src="images/icons8-github.gif" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         let logo = document.querySelector('.logo')
+        let logo2 = document.querySelector('.logo2')
+        logo.addEventListener('click',()=>{
+          window.location.href = 'index.html'
+        })
+        logo2.addEventListener('click',()=>{
+          window.location.href = 'index.html'
+        })
+    </script>
+</body>
+</html>

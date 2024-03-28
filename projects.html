@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <img src="logo.png" alt="" class="logo" />
+          <img src="logo.png" alt="logo" class="logo2"/>
+          <a href="index.html"><p>Home</p></a>
+          <a href="resume.html"><p>Resume</p></a>
+          <a href="contact.html"><p>Contact Me</p></a>
+        </ul>
+        <div class="navigation">
+          <a href="#weather">Weather App</a
+          ><a href="#rps">Rock Paper Scissors</a><a href="#ttt">Tic Tac Toe</a
+          ><a href="#noisli">Noisli Clone</a
+          ><a href="#currency">Currency Converter</a
+          ><a href="#snap">Snap Save</a><a href="#notes">Notes App</a
+          ><a href="#quiz">Quizify</a>
+        </div>
+      </nav>
+      <div class="projects">
+        <div class="project-item" id="weather">
+          <div class="image image1"></div>
+          <div class="project-info">
+            <h2>Weather App</h2>
+            <br />
+            <p>
+              Once the user inputs the city name and submits the request,
+              CityWeather swiftly retrieves the latest weather data from
+              reliable sources. The app displays key weather parameters
+              prominently, including temperature, humidity, and wind speed.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="rps">
+          <div class="image image2"></div>
+          <div class="project-info">
+            <h2>Rock Paper Scissors</h2>
+            <br />
+            <p>
+              Experience the timeless fun of Rock, Paper, Scissors in a digital
+              format with our Web Rock Paper Scissors Game! Challenge your
+              friends or test your luck against the computer in this classic
+              game of strategy and intuition.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="ttt">
+          <div class="image image3"></div>
+          <div class="project-info">
+            <h2>Tic Tac Toe</h2>
+            <br />
+            <p>
+              Dive into a classic game of strategy and skill with our Web Tic
+              Tac Toe Game! Experience the thrill of this timeless favorite in a
+              digital format, perfect for players of all ages.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="noisli">
+          <div class="image image4"></div>
+          <div class="project-info">
+            <h2>Noisli Clone</h2>
+            <br />
+            <p>
+              This is a soothing web application that serves as a clone
+              of the popular platform Noisli, offering users a familiar
+              experience with customizable ambient sounds. Like its inspiration,
+              Tranquilize provides a range of high-quality sounds to help users
+              enhance focus, relaxation, and productivity during work, study,
+              meditation, or sleep.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="currency">
+          <div class="image image5"></div>
+          <div class="project-info">
+            <h2>Currency Converter</h2>
+            <br />
+            <p>
+              Currency Converter is a versatile web application designed to
+              simplify currency conversions effortlessly. Whether you're a
+              traveler, business owner, or investor, Currency Converter provides
+              real-time exchange rates and user-friendly features to meet all
+              your currency conversion needs.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="snap">
+          <div class="image image6"></div>
+          <div class="project-info">
+            <h2>Snap Save</h2>
+            <br />
+            <p>
+              SnapSave is your ultimate web application for effortlessly
+              searching, saving, and organizing images from across the web.
+              Whether you're a designer, content creator, or simply an image
+              enthusiast, SnapSave provides a seamless experience for
+              discovering and curating visual inspiration.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="notes">
+          <div class="image image7"></div>
+          <div class="project-info">
+            <h2>Notes App</h2>
+            <br />
+            <p>
+              This is a web application designed to streamline your note-taking
+              experience, providing a seamless platform to capture, organize,
+              and access your thoughts, ideas, and tasks from anywhere, at any
+              time.
+            </p>
+          </div>
+        </div>
+        <div class="project-item" id="quiz">
+          <div class="image image8"></div>
+          <div class="project-info">
+            <h2>Quizify</h2>
+            <br />
+            <p>
+              Quizify is a dynamic web application designed to make learning fun
+              and interactive through engaging quizzes covering a wide range of
+              topics. Whether you're a student looking to test your knowledge or
+              a teacher aiming to create educational assessments, Quizify offers
+              a seamless platform for creating, taking, and sharing quizzes.
+            </p>
+          </div>
+        </div>
+        <div class="socials" style="margin-top: 10vh">
+          <a href=""><img src="images/icons8-twitter.gif" alt="" /></a>
+          <a href="https://www.linkedin.com/in/ayyan-nakai-4759852b4/"><img src="images/icons8-linkedin.gif" alt="" /></a>
+          <a href="https://github.com/ayyannakai"><img src="images/icons8-github.gif" alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <script>
+        let projects = document.querySelectorAll(".image");
+        projects.forEach((el,index)=>{
+            el.addEventListener('click',()=>{
+                if (index==0){
+                    window.location.href = "https://ayyannakai.github.io/weather/";
+                }
+
+                else if (index == 1){
+                    window.location.href = 'https://ayyannakai.github.io/rock-paper-scissor/RPS.html'
+                }
+                
+                else if (index == 2){
+                    window.location.href = 'https://ayyannakai.github.io/tic-tac-toe/tictactoe.html'
+                }
+                
+                else if (index == 3){
+                    window.location.href = 'https://ayyannakai.github.io/Noisli-Clone/'
+                }
+                else if (index == 4){
+                    window.location.href = 'https://ayyannakai.github.io/-currency-converter/'
+                }
+                else if (index == 5){
+                    window.location.href = 'https://ayyannakai.github.io/search-images/'
+                }
+                else if (index == 6){
+                    window.location.href = ' https://ayyannakai.github.io/notes/'
+                  }
+                else if (index == 7){
+                    window.location.href = 'https://ayyannakai.github.io/quiz/'
+                  }
+                  
+                
+            })
+        })
+        let logo = document.querySelector('.logo')
+        let logo2 = document.querySelector('.logo2')
+        logo.addEventListener('click',()=>{
+          window.location.href = 'index.html'
+        })
+        logo2.addEventListener('click',()=>{
+          window.location.href = 'index.html'
+        })
+    
+    </script>
+  </body>
+</html>
